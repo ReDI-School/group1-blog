@@ -3,5 +3,5 @@
 <% @posts.each do |post| %>
   <h3><%= post.title %></h3>
   <p><%= post.body %></p>
-  <a href="/posts/<%= post.id %>">Show Details</a>
+  <td><%= link_to 'Show Details', post_path(post) %></td>
 <% end %>

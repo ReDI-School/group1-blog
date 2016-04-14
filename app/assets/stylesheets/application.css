@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+ h1>a {
+   color: #000000;
+   text-decoration: none;text-decoration: none;
+ }
