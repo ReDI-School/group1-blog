@@ -9,3 +9,7 @@ bundle install
 rake db:migrate
 rake db:seed
 rails server
+```
+
+## Stages
+* v0.1 - Post model, Post controller, show and index views
