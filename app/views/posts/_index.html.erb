@@ -1,0 +1,12 @@
+<h2>We are on the index page</h2>
+<% if @posts != nil %>
+  <% @posts.each do |post| %>
+    <h3><%= post.title %></h3>
+    <p><%= post.body %></p>
+    <%= link_to 'Show Details', post_path(post) %>
+    <%= link_to 'Edit', edit_post_path(post) %>
+    <%= link_to 'Delete', post_path(post),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %>
+  <% end %>
+<% end %>

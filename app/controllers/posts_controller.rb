@@ -2,12 +2,14 @@ class PostsController < ApplicationController
 
   def new
     @post = Post.new
+    @posts = Post.all
 
 
   end
 
 
   def edit
+    @posts = Post.all
     @post = Post.find_by_id(params[:id])
   end
 
@@ -27,7 +29,7 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find_by_id(params[:id])
-
+    @posts = Post.all
     if (@post == nil)
       render file:"/public/404.html"
     end
