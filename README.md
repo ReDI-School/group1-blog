@@ -16,3 +16,4 @@ rails server
 * v0.2 - Add new view and logic to create a new post
 * v0.3 - Edit posts, input validation, delete posts
 * v0.4 - Two column layout for new post page
+* v0.5 - Add comments to posts
