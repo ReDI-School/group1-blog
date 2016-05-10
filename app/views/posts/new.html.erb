@@ -1,10 +1,12 @@
-<div style = "float:left; width: 70%">
-<h1>New Post</h1>
+<div>
+  <div class="col_left">
+    <h1>New Post</h1>
 
-<%= render 'form' %>
+    <%= render 'form' %>
 
-<%= link_to 'Back', posts_path %>
-</div>
-<div style = "float:right; width: 30%">
-<%= render 'index' %>
+    <%= link_to 'Back', posts_path %>
+  </div>
+  <div class="col_right">
+    <%= render 'index' %>
+  </div>
 </div>

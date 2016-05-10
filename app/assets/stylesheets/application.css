@@ -18,3 +18,15 @@
    color: #000000;
    text-decoration: none;text-decoration: none;
  }
+
+.col_left
+{
+  float:left;
+  width: 70%;
+}
+
+.col_right
+{
+  float:right;
+  width:30%;
+}
